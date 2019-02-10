@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+}
+
+.box {
+    display: block;
+    width: 400px;
+    margin: 45px auto 0 auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.formTitle {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    background-color: #999393;
+    color: #fff;
+}
+
+.formInput,
+.formBtn {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    color: #797272;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #999393;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.formGroupBtn {
+    margin: 0 75%;
+}
+
+.formBtn:focus,
+.formBtn:hover {
+    opacity: 0.7;
+}
+
+.formInput:focus {
+    border-bottom: 1px solid #000;
+}
+
+/* Медиа-запросы */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .box {
+        width: 600px;
+    }
+
+    .formTitle {
+        font-size: 35px;
+    }
+
+    .formInput {
+        font-size: 18px;
+    }
+
+    .formBtn {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    .box {
+        width: 500px;
+    }
+
+    .formTitle {
+        font-size: 35px;
+    }
+
+    .formInput, 
+    .formBtn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 426px) {
+    .box {
+        width: 400px;
+    }
+
+    .formTitle {
+        font-size: 45px;
+    }
+
+    .formGroup {
+        margin-bottom: 30px;
+    }
+
+    .formInput, 
+    .formBtn {
+        font-size: 20px;
+    }
+
+    .agree {
+        font-size: 16px;
+    }
+};
+
